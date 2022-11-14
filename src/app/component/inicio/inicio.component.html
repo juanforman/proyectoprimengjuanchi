@@ -1,0 +1,11 @@
+<h3>Todo En Competicion</h3>
+<p-galleria [value]="images" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.url" [alt]="item.alt" width="500px"/>
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.url" width="80px"/>
+        </div>
+    </ng-template>
+</p-galleria>
